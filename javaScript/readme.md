@@ -18,6 +18,8 @@
         * Function
         * Date
         * RegExp
+        * Math (对象形式存在)
+        * JSON
 
 ```
 js 内置类型 有六种
