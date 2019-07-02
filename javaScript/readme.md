@@ -1,20 +1,24 @@
-# [interviewMap](https://yuchengkai.cn/docs/frontend)   
+# [interviewMap](https://yuchengkai.cn/docs/frontend)
+# [重新介绍 JavaScript（JS 教程）](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
 `Symbol n.代号`
 
 
-### js 
+### js
 * 内置类型(6种)
     * null
     * undefined
-    * boolean 
-    * number
-    * string 
-    * symbol 
+    * Boolean
+    * Number
+    * String
+    * Symbol (es5 新增)
 * 引用类型
-    * object
-    * array 
-    * Math
-        
+    * Object
+        * Array
+        * Function
+        * Date
+        * RegExp
+
 ```
 js 内置类型 有六种
 null，undefined，boolean，number，string，symbol
