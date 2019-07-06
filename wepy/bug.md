@@ -1,5 +1,5 @@
 # bug
-# 滚动穿透
+## 滚动穿透
 ```
 https://blog.csdn.net/jerryman_ghj/article/details/79232324
 https://segmentfault.com/q/1010000011134345
@@ -9,7 +9,13 @@ https://segmentfault.com/q/1010000011134345
 3, 如果在mpvue中使用catchtouchmove="touchmoveHandler"的话，会导致监听不到touchmoveHandler方法，小程序会一直报警，暂未找到解决方法。
 ```
 
+## textarea组件层级过高导致文字穿透浮层的一个解决方法
+```
+解决方案1:  https://blog.csdn.net/mossbaoo/article/details/87169102
+https://blog.csdn.net/DeepLies/article/details/81511722
+https://blog.csdn.net/NewTWG/article/details/85333448
 
+```
 
 
 
