@@ -15,6 +15,8 @@ https://segmentfault.com/q/1010000011134345
 https://blog.csdn.net/DeepLies/article/details/81511722
 https://blog.csdn.net/NewTWG/article/details/85333448
 
+微信小程序实现部分双向数据绑定（为input、picker、textarea编写统一的更新数据逻辑）
+https://www.cnblogs.com/sgqwjr/p/9130744.html
 ```
 
 
