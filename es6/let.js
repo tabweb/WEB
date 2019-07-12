@@ -22,13 +22,17 @@
 // prop：必需。需定义或修改的属性的名字
 // descriptor：必需。目标属性所拥有的特性
 {
-    let B = {};
-    Object.defineProperty(B, 'name', {
-        value: 'Jack',
-        writable: true
-    })
+    let B = {
+        name:'Jack'
+    };
     B.name = 'rose'
-    console.log(B.name);
+    console.log(B.name); // rose
+    Object.defineProperty(B, 'name', {
+        writable: false
+    })
+    B.name = 'Robin'
+    console.log(B.name); // rose
+
 }
 
 
