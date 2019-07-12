@@ -94,7 +94,7 @@
 }
 
 
-eg
+// eg
 {
     let fn = function (num) {
         return new Promise(function (resolve, reject) {
