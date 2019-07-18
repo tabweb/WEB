@@ -14,11 +14,13 @@ https://www.cnblogs.com/storebook/p/9515886.html
 ## 小程序other
 [微信小程序Demo](https://www.cnblogs.com/jayafs/articles/7412237.html#_label25)
 ***
-# qq小程序 QQminiApp
+## qq小程序 QQminiApp
 [qq小程序](https://q.qq.com/wiki)
 
 [wepy](https://tencent.github.io/wepy)
 
+## 小程序直播 
+[小程序直播](http://zhibo.pintuan-xcx.cn/1150650)
 
 
 
