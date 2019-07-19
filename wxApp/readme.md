@@ -23,7 +23,8 @@ https://www.cnblogs.com/storebook/p/9515886.html
 [小程序直播](http://zhibo.pintuan-xcx.cn/1150650)
 
 
-
+## 小程序 component
+[小程序日历](https://github.com/treadpit/wx_calendar)
 
 
 
