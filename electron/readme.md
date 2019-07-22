@@ -1,5 +1,5 @@
 ## electron 
-[demo](https://github.com/tabweb/vue-IM)
+* [demo](https://github.com/tabweb/vue-IM)
 ```
 npm install electron-builder -g
 electron-builder --version
