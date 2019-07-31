@@ -1,5 +1,5 @@
 ## webpack
-* [webpack](http://vuejs-templates.github.io/webpack/)
+* [webpack说明](http://vuejs-templates.github.io/webpack/)
 * [webpack打包原理解析](https://github.com/yongningfu/webpack_package)
 
 ## require.ensure
