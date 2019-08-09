@@ -54,4 +54,79 @@ function isEmptyObject( obj ) {
 
 
 
+/*
+js对象及空对象或数组及空数组的判断与比较
+https://www.cnblogs.com/xiangsj/p/8298864.html
+*/
+{
+    // 判断是不是对象：
+    let obj = {};
+    Object.prototype.toString.call(obj) == "[object Object]"; //true
+
+    // 判断是不是数组：
+    let array = [];
+    Object.prototype.toString.call(array) == "[object Array]"; //true
+
+    // 判断是不是字符串：
+    let str = '';
+    Object.prototype.toString.call(str) == "[object String]"; //true
+
+    // 判断是不是数字：
+    let num = 1;
+    Object.prototype.toString.call(num) == "[object Number]"; //true
+
+    // 判断是不是布尔：
+    let boolean = false;
+    Object.prototype.toString.call(boolean) == "[object Boolean]"; //true
+
+    // 判断是否有效：
+    let data;
+    Object.prototype.toString.call(data) != "[object Null]" && Object.prototype.toString.call(data) != "[object Undefined]"; //false
+}
+
+/*
+
+ 判断数组是否为空：
+ let arr = [];
+ arr.length == 0; //true
+ var aa = ['', '', '', '']
+ aa.join('') === ''; //true
+
+ 对象转数组：
+ let obj = {
+ 	1: 'a',
+ 	2: 'b',
+ 	3: 'c'
+ }
+ Object.keys(obj); //[1, 2, 3]
+ Object.values(obj); //['a', 'b', 'c']
+
+ 判断对象是否为空：
+
+ let obj = {}
+
+ Object.keys(obj).length == 0 //true
+ var abc = {
+ 	1: '',
+ 	2: '',
+ 	3: ''
+ }
+ Object.values(abc).join('') !== ''; //true
+
+ 比较2个数组是否相等（ 忽略每项的类型）
+ let arr1 = ["1", 2];
+ let arr2 = [1, 2];
+ arr1.toString() == arr2.toString(); //true
+
+*/
+
+
+
+
+
+
+
+
+
+
 
