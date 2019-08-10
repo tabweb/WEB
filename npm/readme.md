@@ -10,11 +10,11 @@
 ## npm 和 yarn 区别
 [区别](https://www.jianshu.com/p/254794d5e741)
 
-## npm 和 yarn 淘宝镜像 
+## npm 和 yarn 淘宝镜像
 ```
 NPM
 查询当前镜像
-npm get registry 
+npm get registry
 
 设置为淘宝镜像
 npm config set registry http://registry.npm.taobao.org/
