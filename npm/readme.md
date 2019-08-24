@@ -1,16 +1,19 @@
 # npm
-[npm官网](https://www.npmjs.com/)
 
-[npm包开发过程](https://www.cnblogs.com/xiaoheimiaoer/p/5041266.html)
+[npm 官网](https://www.npmjs.com/)
+
+[npm 包开发过程](https://www.cnblogs.com/xiaoheimiaoer/p/5041266.html)
 
 # yarn
+
 [yarn](https://yarnpkg.com/zh-Hans/docs/install#windows-stable)
 
-
 ## npm 和 yarn 区别
+
 [区别](https://www.jianshu.com/p/254794d5e741)
 
 ## npm 和 yarn 淘宝镜像
+
 ```
 NPM
 查询当前镜像
@@ -34,3 +37,7 @@ yarn config set registry https://registry.yarnpkg.com
 
 链接：https://www.jianshu.com/p/1dae26594ce5
 ```
+
+## npm 华为镜像
+
+-   [华为镜像](https://mirrors.huaweicloud.com/)
