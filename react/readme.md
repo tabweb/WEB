@@ -30,9 +30,10 @@ componentDidMount() 与 componentWillUnmount() 方法被称作生命周期钩子
 
 -   [React 官方文档](https://react.docschina.org/)
 
-## antd 蚂蚁金服组件
+## react ui antd 蚂蚁金服组件
 
 -   [Ant Design of React](https://ant.design/docs/react/introduce-cn)
+-   [fusion](https://github.com/alibaba-fusion/next)
 
 ## react demo
 
@@ -45,3 +46,6 @@ componentDidMount() 与 componentWillUnmount() 方法被称作生命周期钩子
 ## react moment plugin
 
 -   [JavaScript 日期处理类库](http://momentjs.cn/)
+
+## web 学习路线
+* [前端小白半年准备进BAT](https://github.com/brickspert/blog/issues/16)
