@@ -79,7 +79,7 @@ AOP_SDK_WORK_DIR
 */.idea/
 *.idea/
 *.otf
-*.md
+# *.md
 *.xml
 *.map
 *.less
