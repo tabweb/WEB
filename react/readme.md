@@ -49,3 +49,7 @@ componentDidMount() 与 componentWillUnmount() 方法被称作生命周期钩子
 
 ## web 学习路线
 * [前端小白半年准备进BAT](https://github.com/brickspert/blog/issues/16)
+
+## react 图片剪切压缩
+* [react+antd+react-cropper+lrz 实现图片剪裁后压缩上传](https://blog.csdn.net/genius_yym/article/details/82857907)
+

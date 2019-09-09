@@ -5,3 +5,4 @@
 ## antd 蚂蚁金服 Deme
 
 -   [demo](http://www.react.doudoujs.com/#/dashboard)
+-   [antd 常用知识点和小技巧总结](https://www.jianshu.com/p/c8ebb9eb0e81)
