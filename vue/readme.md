@@ -30,3 +30,4 @@ reactive adj. 反应的；电抗的；反动的
 ## vue-cli
 
 -   [vue-cli](https://cli.vuejs.org/zh/guide/deployment.html)
+-   [利用 vue-cli3 快速搭建 vue 项目详细过程](https://www.jianshu.com/p/8105d6c16d80)
