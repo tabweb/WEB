@@ -12,6 +12,14 @@
 
 [区别](https://www.jianshu.com/p/254794d5e741)
 
+| yarn 命令                    | npm 命令             |
+| ---------------------------- | -------------------- |
+| npm install                  | yarn                 |
+| npm install react --save     | yarn add react       |
+| npm uninstall react --save   | yarn remove react    |
+| npm install react --save-dev | yarn add react --dev |
+| npm update --save            | yarn upgrade         |
+
 ## npm 和 yarn 淘宝镜像
 
 ```
