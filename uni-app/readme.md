@@ -7,4 +7,4 @@
 
 -   [uni-app——想说爱你不容易之踩坑系列](https://www.cnblogs.com/qisi007/p/10701510.html)
 
-https://www.cnblogs.com/putao1/p/10141875.html
+*   [uni-app 的专属强大自适应单位 upx，但是这个这是一个大坑，不能动态赋值解决办法](https://www.cnblogs.com/putao1/p/10141875.html)

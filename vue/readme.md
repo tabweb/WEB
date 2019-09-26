@@ -8,18 +8,11 @@ reactive adj. 反应的；电抗的；反动的
 ## vue
 
 -   [vue github 例子](https://github.com/opendigg/awesome-github-vue)
+-   [VUE 组件汇总](https://juejin.im/post/5af16a2cf265da0b8636353b)
 
 ## vue Demo
-
+  `
 -   [vue2.0 + vue-router + vuex](https://github.com/zimplexing/vue-nReader)
-
-## Element ui (pc ui)
-
--   [Element ui](https://element.eleme.cn/#/zh-CN/component/layout)
-
-## vant (mobile ui)
-
--   [vant](https://youzan.github.io/vant/#/zh-CN/button)
 
 ## vue 好的东西
 
@@ -31,3 +24,8 @@ reactive adj. 反应的；电抗的；反动的
 
 -   [vue-cli](https://cli.vuejs.org/zh/guide/deployment.html)
 -   [利用 vue-cli3 快速搭建 vue 项目详细过程](https://www.jianshu.com/p/8105d6c16d80)
+
+```js
+import crypto from 'crypto-js'; // 加密
+sign = crypto.MD5(encodeURIComponent(url)).toString();
+```
