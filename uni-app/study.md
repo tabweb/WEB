@@ -20,3 +20,32 @@
 ├─manifest.json         配置应用名称、appid、logo、版本等打包信息，详见
 └─pages.json            配置页面路由、导航条、选项卡等页面类信息，详见
 ```
+
+https://www.jianshu.com/p/b481b6c23cdd
+
+## uni-app 动态绑定样式 uni.upx2px(750 / 2) + 'px';
+
+```html
+<template>
+	<view>
+		<view class="half-width" :style="{width: halfWidth}">
+			半屏宽度
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		computed: {
+			halfWidth() {
+				return uni.upx2px(750 / 2) + 'px';
+			}
+		}
+	};
+</script>
+<style>
+	.half-width {
+		background-color: #ff3333;
+	}
+</style>
+```
