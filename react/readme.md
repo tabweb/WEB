@@ -35,7 +35,6 @@ componentDidMount() 与 componentWillUnmount() 方法被称作生命周期钩子
 -   [Ant Design of React](https://ant.design/docs/react/introduce-cn)
 -   [fusion](https://github.com/alibaba-fusion/next)
 
-
 ## react vscode
 
 -   [常用插件](https://www.cnblogs.com/honeynm/p/10024872.html)
