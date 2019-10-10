@@ -19,4 +19,17 @@ const modules = modulesFiles.keys().reduce((modules, modulePath) => {
 export default modules;
 ```
 
+## vue router
+
+```js
+/* Router Modules */
+const modulesFiles = require.context('./modules', true, /\.js$/);
+const modulesRouter = modulesFiles.keys().reduce((modules, modulePath) => {
+	const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1');
+	const value = modulesFiles(modulePath);
+	modules[moduleName] = value.default || value;
+	return modules;
+}, {});
+```
+
 -   [uni-app——想说爱你不容易之踩坑系列](https://www.cnblogs.com/qisi007/p/10701510.html)
