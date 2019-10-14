@@ -2,7 +2,7 @@
 
 ```json
 {
-	"lodash": "^4.17.5", // 常用工具库（深拷贝等）
+	"lodash": "^4.17.5", // 常用工具库（深拷贝等）  // https://underscorejs.org/#values
 	"moment": "^2.22.1" // 时间对象，antd 用的这个，实际开发中可能会用到
 }
 ```

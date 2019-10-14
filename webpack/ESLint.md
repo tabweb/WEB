@@ -8,3 +8,8 @@
     -   [eslint 规则说明](https://blog.csdn.net/weixin_36774307/article/details/89886567)
 
 -   [Vuex 命名空间 namespaced](https://blog.csdn.net/lzb348110175/article/details/89387495)
+
+
+
+## vue ESlint
+- [vue-eslint](https://github.com/vuejs/eslint-config-vue)
