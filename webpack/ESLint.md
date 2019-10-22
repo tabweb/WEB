@@ -13,3 +13,5 @@
 
 ## vue ESlint
 - [vue-eslint](https://github.com/vuejs/eslint-config-vue)
+
+- [eslint-plugin-vue](https://blog.csdn.net/qq_30817073/article/details/78043553)

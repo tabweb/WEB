@@ -1,3 +1,17 @@
+## download file
+
+-   [js 下载文件](https://segmentfault.com/q/1010000007028824)
+
+```js
+const url = 'fileApi/AccountTemplate.xlsx';
+const link = document.createElement('a');
+link.style.display = 'none';
+link.href = url;
+link.setAttribute('download', '导入学生账号模板');
+document.body.appendChild(link);
+link.click();
+```
+
 ## download
 
 -   [vue+axios 实现文件下载](https://blog.csdn.net/qq_32340877/article/details/79864462)
