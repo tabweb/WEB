@@ -8,7 +8,8 @@
 	"qs": "^6.9.0", // qs.js - 更好的处理url参数    // * https://www.cnblogs.com/small-coder/p/9115972.html
 	"ly-downloader": "^1.0.5", //  下载
 	"pretty-bytes": "^5.3.0", // 图标
-	"vue-ele-upload-file": "0.0.4" // vue element-ui upload  // * https://github.com/dream2023/vue-ele-upload-file
+	"vue-ele-upload-file": "0.0.4", // vue element-ui upload  // * https://github.com/dream2023/vue-ele-upload-file
+	"rimraf": "^2.6.2" // 删除文件 rimraf node_modules
 }
 ```
 
