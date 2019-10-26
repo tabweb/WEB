@@ -8,3 +8,9 @@
 ## vue iView-admin2.0
 
 -   [iView-admin2.0](https://lison16.github.io/iview-admin-doc/#/)
+
+## vue 插件
+
+-   [verification cod](https://github.com/zhouyuexie/vue-input-code)
+
+*   [vue-number-keyboard 验证码键盘输入](https://github.com/yujinjin/vue-number-keyboard)
