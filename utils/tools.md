@@ -9,7 +9,10 @@
 	"ly-downloader": "^1.0.5", //  下载
 	"pretty-bytes": "^5.3.0", // 图标
 	"vue-ele-upload-file": "0.0.4", // vue element-ui upload  // * https://github.com/dream2023/vue-ele-upload-file
-	"rimraf": "^2.6.2" // 删除文件 rimraf node_modules
+	"rimraf": "^2.6.2", // 删除文件 rimraf node_modules
+	"crypto-js": "^3.1.9-1", // 加密 crypto.enc.Base64.stringify(crypto.enc.Utf8.parse("测试")) // * https://www.cnblogs.com/Zhangyuxiang/p/5956866.html
+	"react-vcode": "^0.0.4", // react 一个简单的React验证码组件
+	"vue-particle-line": "^0.1.0" // vue 背景粒子 一个Vue+Cnavas酷炫背景粒子线条
 }
 ```
 
