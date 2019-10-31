@@ -23,3 +23,12 @@
 ## nodenpm
 
 -   [nodenpm](https://www.nodenpm.com/search.html)
+
+## images random
+
+```html
+
+<img src="https://www.cilicili.cc/plug-in/img_anime.php" alt="" />
+随机头像 :
+<img src="https://www.cilicili.cc/plug-in/img_tx.php" alt="" />
+```
