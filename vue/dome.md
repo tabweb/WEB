@@ -14,3 +14,7 @@
 -   [verification cod](https://github.com/zhouyuexie/vue-input-code)
 
 *   [vue-number-keyboard 验证码键盘输入](https://github.com/yujinjin/vue-number-keyboard)
+
+## vue input number
+
+-   [vue input number](https://blog.csdn.net/kingzhsh/article/details/88087303)
