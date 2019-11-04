@@ -9,6 +9,7 @@
 ## img
 
 -   [Pexels](https://www.pexels.com)
+-   [https://dummyimage.com](https://dummyimage.com/300x200/50B347/FFF&text=Mock)
 
 ```html
 <div class="hide-featured-badge hide-favorite-badge">
