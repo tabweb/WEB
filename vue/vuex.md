@@ -5,6 +5,7 @@
 -   [Vue.js(六) 全局状态管理(Vuex)](https://blog.csdn.net/vbirdbest/article/details/85289630)
 -   [Vue 的状态管理器：Vuex](https://blog.csdn.net/u011068996/article/details/82215838)
 -   [12.Vuex 命名空间 namespaced](https://blog.csdn.net/lzb348110175/article/details/89387495)
+-   [Vuex mapGetters,mapActions](https://www.cnblogs.com/yaowen/p/8927343.html)
 
 ```
 1.全局状态管理
