@@ -8,7 +8,7 @@
 
 ## yarn yarn 的安装和使用
 
--   [yarn的安装和使用](https://blog.csdn.net/yw00yw/article/details/81354533)
+-   [yarn 的安装和使用](https://blog.csdn.net/yw00yw/article/details/81354533)
 -   [Yarn 安装与使用详细介绍](https://blog.csdn.net/csdn_yudong/article/details/82015885)
 
 ```
@@ -25,3 +25,10 @@ yarn的安装:
 ```
 
 ![yarn](yarn.png)
+
+## react yarn 安装 node-sass 过慢或报编译错误
+
+第一步：配置淘宝镜像
+yarn config set registry https://registry.npm.taobao.org -g
+第二步：配置下 node-sass 的二进制包镜像地址
+yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
