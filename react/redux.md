@@ -1,6 +1,6 @@
 ## redux
-* [完全理解 redux（从零实现一个 redux）](http://react-china.org/t/redux-redux/27292)
 
+-   [完全理解 redux（从零实现一个 redux）](http://react-china.org/t/redux-redux/27292)
 
 ```
 记得开始接触 react 技术栈的时候，最难理解的地方就是 redux。全是新名词：reducer、store、dispatch、middleware 等等，我就理解 state 一个名词。
@@ -20,4 +20,3 @@ Let’s Go！
 因为不断更新维护，更多请移步 github: https://github.com/brickspert/blog/issues/22 5.4K
 
 ```
-

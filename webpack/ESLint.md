@@ -9,9 +9,8 @@
 
 -   [Vuex 命名空间 namespaced](https://blog.csdn.net/lzb348110175/article/details/89387495)
 
-
-
 ## vue ESlint
-- [vue-eslint](https://github.com/vuejs/eslint-config-vue)
 
-- [eslint-plugin-vue](https://blog.csdn.net/qq_30817073/article/details/78043553)
+-   [vue-eslint](https://github.com/vuejs/eslint-config-vue)
+
+-   [eslint-plugin-vue](https://blog.csdn.net/qq_30817073/article/details/78043553)
