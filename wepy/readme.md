@@ -15,3 +15,4 @@
 ## wepy 官方
 
 -   [wepy 官方](https://github.com/Tencent/wepy)
+-   [wepy 2.0](https://wepyjs.github.io/wepy-docs/2.x/#/base/getstart)
