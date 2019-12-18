@@ -13,6 +13,7 @@ web 前端整理
 ## git
 
 -   [Git 常用命令清单笔记](https://segmentfault.com/a/1190000002479970)
+-   [从零开发一个微型 Git](http://geocld.github.io/2019/12/09/learn-git-by-code/)
 
 ## 资源
 
