@@ -10,7 +10,8 @@
 
 ## npm 和 yarn 区别
 
-[区别](https://www.jianshu.com/p/254794d5e741)
+-   [区别](https://www.jianshu.com/p/254794d5e741)
+-   [](https://www.jianshu.com/p/7c79b9b08792)
 
 | yarn 命令                    | npm 命令             |
 | ---------------------------- | -------------------- |
