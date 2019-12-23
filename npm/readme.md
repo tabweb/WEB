@@ -27,10 +27,8 @@
 NPM
 查询当前镜像
 npm get registry
-
 设置为淘宝镜像
 npm config set registry http://registry.npm.taobao.org/
-
 设置为官方镜像
 npm config set registry https://registry.npmjs.org/
 
@@ -45,6 +43,33 @@ yarn config set registry http://registry.npm.taobao.org/
 yarn config set registry https://registry.yarnpkg.com
 
 链接：https://www.jianshu.com/p/1dae26594ce5
+```
+
+## npm 和 yarn 的淘宝镜像添加
+
+-   [npm 和 yarn 的淘宝镜像添加](https://www.jianshu.com/p/79d61e27f3f4)
+
+```
+NPM
+npm config set registry https://registry.npm.taobao.org
+npm config set disturl https://npm.taobao.org/dist
+npm config set electron_mirror https://npm.taobao.org/mirrors/electron/
+npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
+
+YARN
+yarn config set registry https://registry.npm.taobao.org -g
+yarn config set disturl https://npm.taobao.org/dist -g
+yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g
+yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g
+yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g
+yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g
+yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g
+yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g
+
+持久化文件路径在
+C:\Users\用户名
+.npmrc和.yarnrc文件
 ```
 
 ## npm 华为镜像
