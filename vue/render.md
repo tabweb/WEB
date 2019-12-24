@@ -21,7 +21,8 @@ export default {
         return {
           prizeUrl: '', // 奖品图片
         }
-      }
+      },
+      // default: Object,
     }
   },
   components: {},
