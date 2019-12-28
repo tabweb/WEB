@@ -58,3 +58,7 @@ https://www.jianshu.com/p/b481b6c23cdd
 <image :src="require('static/images/add.png')" />
 <image :src="require('lib/icons/svg/close.svg')" />
 ```
+
+## upx -> rpx
+
+-   [rpx 兼容 upx](https://ask.dcloud.net.cn/article/36130)
