@@ -38,7 +38,7 @@ https://www.jianshu.com/p/b481b6c23cdd
 	export default {
 		computed: {
 			halfWidth() {
-				return uni.upx2px(750 / 2) + 'px';
+				return uni.upx2px(750 / 2) + "px";
 			}
 		}
 	};
@@ -48,4 +48,13 @@ https://www.jianshu.com/p/b481b6c23cdd
 		background-color: #ff3333;
 	}
 </style>
+```
+
+## uni-app images
+
+-   [uniapp H5 打包时，静态资源文件指向不对](https://blog.csdn.net/weixin_44097578/article/details/95470898)
+
+```html
+<image :src="require('static/images/add.png')" />
+<image :src="require('lib/icons/svg/close.svg')" />
 ```
