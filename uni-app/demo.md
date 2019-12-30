@@ -22,6 +22,8 @@
 -   [QS-tabs 选项卡 19/11/28 1.4 优化](https://ext.dcloud.net.cn/plugin?id=795)
 -   [tab-list ](https://ext.dcloud.net.cn/plugin?id=1110)
 
+## [cmd-avatar 头像组件-图片/图标/单字符](https://ext.dcloud.net.cn/plugin?id=176)
+
 ## ps 蓝湖
 
 -   [蓝湖](https://lanhuapp.com)
