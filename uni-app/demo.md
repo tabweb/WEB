@@ -24,6 +24,8 @@
 
 ## [cmd-avatar 头像组件-图片/图标/单字符](https://ext.dcloud.net.cn/plugin?id=176)
 
+## [uni-ui](https://ext.dcloud.net.cn/plugin?id=55)
+
 ## ps 蓝湖
 
 -   [蓝湖](https://lanhuapp.com)
