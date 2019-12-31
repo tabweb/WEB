@@ -26,6 +26,8 @@
 
 ## [uni-ui](https://ext.dcloud.net.cn/plugin?id=55)
 
+## [radio 单选多选](https://ext.dcloud.net.cn/plugin?id=136)
+
 ## ps 蓝湖
 
 -   [蓝湖](https://lanhuapp.com)
