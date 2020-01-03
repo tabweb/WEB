@@ -14,3 +14,11 @@ http://vuejs-templates.github.io/webpac
 	}
 </style>
 ```
+
+## image 3px
+
+```css
+.font-size0 {
+	font-size: 0;
+}
+```
