@@ -28,6 +28,8 @@
 
 ## [radio 单选多选](https://ext.dcloud.net.cn/plugin?id=136)
 
+## [三级地址联动，支持（app）nvue、小程序、H5 ](https://ext.dcloud.net.cn/plugin?id=1084)
+
 ## ps 蓝湖
 
 -   [蓝湖](https://lanhuapp.com)
