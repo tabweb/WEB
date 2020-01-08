@@ -62,3 +62,5 @@ https://www.jianshu.com/p/b481b6c23cdd
 ## upx -> rpx
 
 -   [rpx 兼容 upx](https://ask.dcloud.net.cn/article/36130)
+
+## [微信小程序 - 分包加载](https://www.cnblogs.com/cisum/p/10190245.html)
