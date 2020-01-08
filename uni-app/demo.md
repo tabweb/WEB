@@ -28,6 +28,8 @@
 
 ## [radio 单选多选](https://ext.dcloud.net.cn/plugin?id=136)
 
+## [顶部 NavBar 导航栏，滑动透明，颜色渐变，图标防看不清](https://ext.dcloud.net.cn/plugin?id=813)
+
 ## [三级地址联动，支持（app）nvue、小程序、H5 ](https://ext.dcloud.net.cn/plugin?id=1084)
 
 ## ps 蓝湖
