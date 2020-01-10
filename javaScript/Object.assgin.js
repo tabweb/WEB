@@ -77,6 +77,7 @@ var new_arr = JSON.parse(JSON.stringify(arr));
 
 
 // https://github.com/nearxu/have-fun-js/blob/master/es5/type.js
+// https://www.cnblogs.com/60late/p/9626336.html
 // 浅赋值 深赋值
 {
     // deepCopy
