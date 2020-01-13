@@ -27,8 +27,8 @@ mapActions 用来获取方法（动作）
 ```
 
 ```js
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 Vue.use(Vuex);
 
 // 定义属性（数据）
@@ -49,7 +49,7 @@ const actions = {
 	increment({ commit, state }) {
 		//提交一个名为 increment 的变化，名字可自定义，可以认为是类型名，与下方 mutations 中的 increment 对应
 		//commit 提交变化，修改数据的唯一方式就是显式的提交 mutations
-		commit('increment');
+		commit("increment");
 	}
 };
 
