@@ -15,6 +15,12 @@
 
 -   [通过 vue-cli 命令行](https://uniapp.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)
 
+## upload img 上传图片
+
+-   [图片上传插件（阿里云、七牛、腾讯云需要集成官方 SDK）](https://github.com/Sunnshino/sunui-upimg)
+-   [uniapp - 如何申请阿里云存储](https://www.cnblogs.com/cisum/p/10910365.html)
+-   [uniapp-avatar](https://github.com/yqking/uniapp-avatar)
+
 ## mescroll mescroll-uni 下拉加载
 
 -   [mescroll](https://github.com/mescroll/mescroll)
