@@ -13,3 +13,15 @@
 ## ivideo
 
 -   [ivideo](https://github.com/phobal/ivideo)
+
+## input 默认打开数字键盘
+
+```html
+<!-- iOS点击输入框，默认打开数字键盘 -->
+<input
+	class="mui-input-clear"
+	type="tel"
+	maxlength="11"
+	placeholder="请输入手机号"
+/>
+```
