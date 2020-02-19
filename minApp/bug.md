@@ -12,5 +12,6 @@
 ```scss
 .ios-min-height {
 	min-height: 101vh;
+	overflow: scroll;
 }
 ```
