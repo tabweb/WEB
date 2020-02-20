@@ -38,3 +38,12 @@
 支付成功后
 回调是后台完成的
 ```
+
+### canvas fixed 定位会引起 barTab 消失
+
+```js
+// 退出页面之前关掉 固定 定位页面
+  beforeDestroy() {
+    this.$refs.avatar.fClose()
+  }
+```
