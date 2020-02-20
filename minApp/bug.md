@@ -27,3 +27,14 @@
 <canvas :disable-scroll="false"></canvas>
 <canvas :disable-scroll="true"></canvas>
 ```
+
+### 小程序支付 回调
+
+-   [小程序 服务端 支付](https://q.qq.com/wiki/develop/miniprogram/server/virtual-payment/mini_pay.html)
+
+```
+
+前端只要调起支付界面
+支付成功后
+回调是后台完成的
+```
