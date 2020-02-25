@@ -26,6 +26,12 @@
 且动态设置canvas中的disable-scroll属性不生效。整个page的滑动亦被禁止。
 <canvas :disable-scroll="false"></canvas>
 <canvas :disable-scroll="true"></canvas>
+
+<!-- :disable-scroll="false" -->
+Android 无法滑动屏幕
+
+<!-- :disable-scroll="true" -->
+ios 无法向下滑动
 ```
 
 ### 小程序支付 回调
