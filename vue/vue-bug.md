@@ -22,3 +22,5 @@
 	};
 </script>
 ```
+
+### [Vue 中自动获取 input 焦点](https://blog.csdn.net/weixin_40890907/article/details/82346042)
