@@ -24,3 +24,22 @@
 ```
 
 ### [Vue 中自动获取 input 焦点](https://blog.csdn.net/weixin_40890907/article/details/82346042)
+
+### vue :style computed
+
+```html
+<!-- :style="[xx,xx]" -->
+<div :style="[sunsinWidth]"></div>
+
+<script>
+	computed: {
+	  sunsinWidth() {
+	    return {
+	      width: this.width + 'rpx',
+	      height: this.height + 'rpx',
+	      lineHeight: this.height + 'rpx'
+	    }
+	  }
+	}
+</script>
+```
