@@ -87,3 +87,7 @@ prevPage.setData({
 	mydata: { a: 1, b: 2 }
 });
 ```
+
+##  [uni-app 中 mounted 在 wx 小程序生命周期哪个阶段](https://blog.csdn.net/hbiao68/article/details/102960770)
+
+## [微信小程序 onLoad、onShow、onHide、onUnload 区别](https://blog.csdn.net/ljy950914/article/details/91384311)
