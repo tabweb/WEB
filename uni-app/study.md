@@ -66,8 +66,24 @@ https://www.jianshu.com/p/b481b6c23cdd
 ## [微信小程序 - 分包加载](https://www.cnblogs.com/cisum/p/10190245.html)
 
 ## 获取当前页面地址
-* [uniapp如何在页面中获取当前路径](https://ask.dcloud.net.cn/question/78381)
+
+-   [uniapp 如何在页面中获取当前路径](https://ask.dcloud.net.cn/question/78381)
+
 ```
 let pages = getCurrentPages();
 let route = pages[pages.length - 1].route;
+```
+
+## [微信小程序从子页面退回父页面时的数据传递 wx.navigateBack()](https://www.cnblogs.com/caicaizi/p/6652103.html)
+
+```js
+var pages = getCurrentPages();
+var currPage = pages[pages.length - 1]; //当前页面
+var prevPage = pages[pages.length - 2]; //上一个页面
+// 调用上一个页面的方法
+prevPage.onLoad();
+//直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+prevPage.setData({
+	mydata: { a: 1, b: 2 }
+});
 ```
