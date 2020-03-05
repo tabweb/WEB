@@ -64,3 +64,10 @@ https://www.jianshu.com/p/b481b6c23cdd
 -   [rpx 兼容 upx](https://ask.dcloud.net.cn/article/36130)
 
 ## [微信小程序 - 分包加载](https://www.cnblogs.com/cisum/p/10190245.html)
+
+## 获取当前页面地址
+* [uniapp如何在页面中获取当前路径](https://ask.dcloud.net.cn/question/78381)
+```
+let pages = getCurrentPages();
+let route = pages[pages.length - 1].route;
+```

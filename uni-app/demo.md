@@ -38,10 +38,6 @@
 
 ## [三级地址联动，支持（app）nvue、小程序、H5 ](https://ext.dcloud.net.cn/plugin?id=1084)
 
-## ps 蓝湖
+## [uni-simple-router uni-app 全局 router](http://hhyang.cn/)
 
--   [蓝湖](https://lanhuapp.com)
-
-```
-https://lanhuapp.com/url/51G0x-YAWNc
-```
+-   [uni-simple-router](https://github.com/SilurianYang/uni-simple-router)
