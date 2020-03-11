@@ -12,6 +12,17 @@ input::-webkit-input-placeholder {
 }
 ```
 
+### showLoading ios bug
+
+uni.showLoading 的 title 一定要有值 不然 ios 无法显示
+
+```js
+uni.showLoading({
+	title: "　", // 全角空格
+	mask: true // 是否显示透明蒙层，防止触摸穿透，默认：false
+});
+```
+
 ### uniapp: request 竟然没有 timeout
 
 -   [uniapp: request 竟然没有 timeout](https://ask.dcloud.net.cn/article/35067)
