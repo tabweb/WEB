@@ -94,6 +94,9 @@ prevPage.setData({
 
 ## input focus 字体上跳
 
+-   [微信小程序 input 组件获取焦点时，字体向上跳动，并出现黑色阴影并立刻消失？](https://developers.weixin.qq.com/community/develop/doc/000e846baf84f85a19699bd5e56000)
+-   [提供下可复现问题的代码片段](https://developers.weixin.qq.com/miniprogram/dev/devtools/minicode.html)
+
 ```
 Android
 小程序 input 只要 focus 字就会往上跳
