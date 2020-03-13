@@ -39,3 +39,7 @@ http://vuejs-templates.github.io/webpac
 	</div>
 </div>
 ```
+
+### outline
+
+-   [css outline:none; 去除 input 获取焦点时的边](https://blog.csdn.net/Caroline_Yang/article/details/80435994)
