@@ -91,3 +91,11 @@ prevPage.setData({
 ##  [uni-app 中 mounted 在 wx 小程序生命周期哪个阶段](https://blog.csdn.net/hbiao68/article/details/102960770)
 
 ## [微信小程序 onLoad、onShow、onHide、onUnload 区别](https://blog.csdn.net/ljy950914/article/details/91384311)
+
+## input focus 字体上跳
+
+```
+Android
+小程序 input 只要 focus 字就会往上跳
+官方demo没解决
+```
