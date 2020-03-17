@@ -43,3 +43,15 @@
 	}
 </script>
 ```
+
+### vue :class
+
+```html
+<script>
+	 data: {
+		isActive: true,
+		errorClass: "text-danger"
+	};
+</script>
+<div v-bind:class="[{ active: isActive }, errorClass]"></div>
+```
