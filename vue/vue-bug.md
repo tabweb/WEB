@@ -1,4 +1,4 @@
-### debounce
+### debounce throttle 节流防抖
 
 ```html
 <template>
