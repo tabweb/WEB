@@ -11,4 +11,11 @@ seller: {
       return {}
    }
 }
+
+list: {
+  type: Array,
+  default() {
+    return []
+  }
+}
 ```
