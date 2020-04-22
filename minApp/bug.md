@@ -53,3 +53,17 @@ ios 无法向下滑动
     this.$refs.avatar.fClose()
   }
 ```
+
+### andriod 小程序 font-size:20rpx bug 向上偏移
+
+-   [解决安卓字体偏移：页面整体缩放](https://www.cnblogs.com/yangshifu/p/9766584.html)
+
+(font-size 小于 20rpx)
+(font-size 小于 12px)
+
+```
+andriod 小程序
+font-size:20rpx bug 去掉 line-height
+
+h5 font-size:12px
+```

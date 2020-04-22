@@ -1,5 +1,8 @@
 ### :nth-of-type(2n)
 
+-   [nth-of-type(an+b)](https://www.runoob.com/cssref/sel-nth-of-type.html)
+    使用公式（an+b）.描述：a 代表一个循环的大小，N 是一个计数器（从 0 开始），以及 b 是偏移量。
+
 ```html
 <!DOCTYPE html>
 <html>
