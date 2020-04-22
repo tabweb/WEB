@@ -12,8 +12,6 @@ reactive adj. 反应的；电抗的；反动的
 
 ## vue Demo
 
-`
-
 -   [vue2.0 + vue-router + vuex](https://github.com/zimplexing/vue-nReader)
 
 ## vue 好的东西
@@ -28,11 +26,10 @@ reactive adj. 反应的；电抗的；反动的
 -   [利用 vue-cli3 快速搭建 vue 项目详细过程](https://www.jianshu.com/p/8105d6c16d80)
 
 ```js
-import crypto from 'crypto-js'; // 加密
+import crypto from "crypto-js"; // 加密
 sign = crypto.MD5(encodeURIComponent(url)).toString();
 ```
 
 ## vue 项目
 
 -   [Vue.js 高仿饿了么外卖 App 课程源码 http://ustbhuangyi.com/sell/](https://github.com/ustbhuangyi/vue-sell)
-
