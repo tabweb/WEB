@@ -67,3 +67,55 @@ font-size:20rpx bug 去掉 line-height
 
 h5 font-size:12px
 ```
+
+### rpx 转 px 取整数 4rpx => 1px
+
+```css
+/*
+ 荣耀
+width: 360
+height: 746
+*/
+
+.pa {
+	position: absolute;
+	top: 4rpx;
+	left: 4rpx;
+}
+.pa {
+	/* 转 ==> */
+	position: absolute;
+	top: 1rpx;
+	left: 1rpx;
+}
+```
+
+### ios bug
+
+dis-flex-list 做列表
+子元素 自动 排序
+子元素的子元素 ios 无法自动 bg-back 撑开
+
+```html
+<div style="width:338rpx;height:527rpx" class="pa bg-back dis-flex-list sudoku">
+	<div
+		v-for="(value,index) in [1,2,3,4,5,6,7,8,9]"
+		:key="index"
+		class="width1-3 pr"
+	>
+		<div class="ce bg-back-red"></div>
+	</div>
+</div>
+
+<style>
+	.dis-flex-list {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: justify;
+		justify-content: space-between;
+	}
+	.width1-3 {
+		width: calc(100% / 3);
+	}
+</style>
+```
