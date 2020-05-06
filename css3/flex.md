@@ -5,6 +5,7 @@
 -   [display:flex align-items](http://caibaojian.com/demo/flexbox/align-items.html)
 -   [flex 实现多根轴线的对齐方式](https://blog.csdn.net/memedadexixaofeifei/article/details/78945918)
 -   [flex 布局交叉轴方向对齐方式详解](https://blog.csdn.net/zSY_snake/article/details/80200089)
+-   [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool))
 
 ### 弹性盒子
 
