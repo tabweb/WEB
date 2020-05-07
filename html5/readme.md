@@ -25,3 +25,21 @@
 	placeholder="请输入手机号"
 />
 ```
+
+### <img/> img
+
+-   [img 的 srcset、sizes 属性和 picture 元素](https://www.jianshu.com/p/607567e488fc)
+-   [github 上值得关注的前端项目](https://segmentfault.com/a/1190000002804472)
+
+```html
+<img
+	srcset="
+		http://placehold.it/2000 2000w,
+		http://placehold.it/1500 1500w,
+		http://placehold.it/1000 1000w,
+		http://placehold.it/500   500w
+	"
+	sizes="(max-width: 500px) 500px, (max-width: 1000px) 1000px, (max-width: 1500px) 1500px, 2000px"
+	src="http://placehold.it/500/abc"
+/>
+```

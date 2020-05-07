@@ -1,6 +1,11 @@
-# node
+### github 上值得关注的前端项目
 
-http://nqdeng.github.io/7-days-nodejs/#1.1
+-   [github 上值得关注的前端项目](https://segmentfault.com/a/1190000002804472)
+
+### node
+
+-   [node.js 中文资料导航](https://github.com/youyudehexie/node123)
+-   [七天学会 NodeJS](http://nqdeng.github.io/7-days-nodejs/#1.1)
 
 ### imageinfo
 
