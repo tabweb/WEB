@@ -26,7 +26,7 @@
 />
 ```
 
-### <img/> img
+### <img/> img srcset sizes
 
 -   [img 的 srcset、sizes 属性和 picture 元素](https://www.jianshu.com/p/607567e488fc)
 -   [github 上值得关注的前端项目](https://segmentfault.com/a/1190000002804472)
