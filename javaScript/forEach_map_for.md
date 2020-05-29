@@ -1,3 +1,8 @@
+### map, some, every, forEach, includes, find, findeIndex
+
+-   [JS 判断数组中是否包含某个值](https://www.cnblogs.com/zaijin-yang/p/12196811.html)
+
+```js
 // https://blog.csdn.net/u012841667/article/details/78375789
 // map和forEach，for性能比较
 /*
@@ -24,7 +29,6 @@ every(): 返回一个boolean， 判断每个元素是否符合func条件（ 所�
 forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回值， 如果里面有操作方法就会改变原数组）
 */
 
-
 // some
 {
 	// some 当内部return true时跳出整个循环
@@ -33,7 +37,7 @@ forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回
 		if (value === 3) {
 			return true; //当内部return true时跳出整个循环
 		}
-		console.log(value) // 1 2
+		console.log(value); // 1 2
 	});
 }
 
@@ -43,25 +47,24 @@ forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回
 	let list = [1, 2, 3, 4, 5];
 	list.every((value, index) => {
 		if (value > 3) {
-			console.log(value) // 4
+			console.log(value); // 4
 			return false;
 		} else {
-			console.log(value) // 1 2 3
+			console.log(value); // 1 2 3
 			return true;
 		}
 	});
 	list.every((value, index) => {
 		if (value > 3) {
-			console.log(value)
+			console.log(value);
 			return false;
 		} else {
-			console.log(value) // 1
+			console.log(value); // 1
 			// return true;
 			// 如果没有返回值true 的话，也会跳出循环
 		}
 	});
 	// every 当内部return false时跳出整个循环（return true;也是需要写）
-
 }
 
 // forEach
@@ -69,12 +72,12 @@ forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回
 	Array.prototype.foreach = function (callback, thisArg) {
 		var T, k;
 		if (this == null) {
-			throw new TypeError(' this is null or not defined');
+			throw new TypeError(" this is null or not defined");
 		}
 		var O = Object(this); //拿到变量的数组
 		var len = O.length >>> 0; //右移的作用，所有非数值转换成0，所有大于等于0数取整数部分
 		if (typeof callback !== "function") {
-			throw new TypeError(callback + ' is not a function');
+			throw new TypeError(callback + " is not a function");
 		}
 		if (arguments.length > 1) {
 			T = thisArg; //如果存在第三个参数，表明this的指向
@@ -82,12 +85,13 @@ forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回
 		k = 0;
 		while (k < len) {
 			var kValue;
-			if (k in O) //k为属性名
+			if (k in O)
+				//k为属性名
 				kValue = O[k];
 			callback.call(T, kValue, k, O);
 		}
 		k++;
-	}
+	};
 }
 
 // map
@@ -119,3 +123,4 @@ forEach(): 没有返回值， 只是针对每个元素调用func（ 没有返回
 		return A; //返回新的数组，长度和原数组一样
 	};
 }
+```
