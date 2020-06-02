@@ -1,6 +1,7 @@
 ### map, some, every, forEach, includes, find, findeIndex
 
 -   [JS 判断数组中是否包含某个值](https://www.cnblogs.com/zaijin-yang/p/12196811.html)
+-   [js 判断一个数组是否包含另一个数组](https://blog.csdn.net/ming614/article/details/80511171)
 
 ```js
 // https://blog.csdn.net/u012841667/article/details/78375789
