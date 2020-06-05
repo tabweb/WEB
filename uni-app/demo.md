@@ -42,4 +42,4 @@
 
 -   [uni-simple-router](https://github.com/SilurianYang/uni-simple-router)
 
-## [uniapp-extendJavaScript](https://gitee.com/myDarling/uniapp-extend)
+## [uni-app 插件 / 模板分享](https://gitee.com/myDarling/uniapp-extend)
