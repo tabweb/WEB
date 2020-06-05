@@ -41,3 +41,5 @@
 ## [uni-simple-router uni-app 全局 router](http://hhyang.cn/)
 
 -   [uni-simple-router](https://github.com/SilurianYang/uni-simple-router)
+
+## [uniapp-extendJavaScript](https://gitee.com/myDarling/uniapp-extend)
