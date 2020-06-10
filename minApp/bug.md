@@ -1,3 +1,5 @@
+## bug 总汇 ios bug
+
 ### 华为 图片长按时间 bug
 
 ```scss
@@ -118,4 +120,20 @@ dis-flex-list 做列表
 		width: calc(100% / 3);
 	}
 </style>
+```
+
+### ios 禁止屏幕滚动
+
+-   [小程序 disablescroll ios 上下禁止滑动](https://blog.csdn.net/tabweb/article/details/106649153)
+-   [解决 disableScroll 无法禁止小程序下拉的问题](https://blog.csdn.net/KevinsCSDN/article/details/82421507)
+
+```scss
+.section {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
 ```
