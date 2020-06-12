@@ -19,7 +19,7 @@ uni.showLoading 的 title 一定要有值 不然 ios 无法显示
 ```js
 uni.showLoading({
 	title: "　", // 全角空格
-	mask: true // 是否显示透明蒙层，防止触摸穿透，默认：false
+	mask: true, // 是否显示透明蒙层，防止触摸穿透，默认：false
 });
 ```
 
@@ -29,7 +29,7 @@ uni.showLoading({
 -   [networkTimeout 各类网络请求的超时时间，单位均为毫秒](https://uniapp.dcloud.io/collocation/manifest?id=networktimeout)
 
 ```js
-let globalPostRequest = function(
+let globalPostRequest = function (
 	url,
 	data,
 	callback,
@@ -38,7 +38,7 @@ let globalPostRequest = function(
 ) {
 	if (isWait) {
 		uni.showLoading({
-			title: "正在加载"
+			title: "正在加载",
 		});
 	}
 	console.log("正在请求:xxxxxxxxx" + url);
@@ -51,7 +51,7 @@ let globalPostRequest = function(
 		method: isPost == true ? "POST" : "GET",
 		dataType: "json",
 		header: {
-			"Accept-Language": "zh-CN,en-US;q=0.8"
+			"Accept-Language": "zh-CN,en-US;q=0.8",
 		},
 		success: (data, statusCode) => {
 			console.log("请求成功:" + JSON.stringify(data.data));
@@ -63,7 +63,7 @@ let globalPostRequest = function(
 				status: false,
 				code: 404,
 				data: null,
-				message: "网络繁忙"
+				message: "网络繁忙",
 			};
 			callback(errordata);
 		},
@@ -74,7 +74,7 @@ let globalPostRequest = function(
 				clearTimeout(timeout);
 				timeout = null;
 			}
-		}
+		},
 	});
 	//timeout
 	timeout = setTimeout(() => {
@@ -84,4 +84,20 @@ let globalPostRequest = function(
 		}
 	}, 20000);
 };
+```
+
+### uni-app 动态获取元素高度等
+
+-   [uni-app 动态获取元素高度等](https://www.cnblogs.com/lymconch/p/11286795.html)
+
+```js
+uni.getSystemInfo({
+	success: (res) => {
+		// res - 各种参数
+		let view = uni.createSelectorQuery().in(this).select("#moveArea");
+		view.boundingClientRect((data) => {
+			console.log(data);
+		}).exec();
+	},
+});
 ```
