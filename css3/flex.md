@@ -7,6 +7,16 @@
 -   [flex 布局交叉轴方向对齐方式详解](https://blog.csdn.net/zSY_snake/article/details/80200089)
 -   [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool))
 
+```scss
+// 多行垂直居中
+.dis-flex-mult {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+```
+
 ### 弹性盒子
 
 -   [CSS3 总结五：弹性盒子(flex)、弹性盒子布局](https://www.cnblogs.com/ZheOneAndOnly/p/10847591.html)
