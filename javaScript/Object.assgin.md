@@ -159,3 +159,23 @@ var new_arr = JSON.parse(JSON.stringify(arr));
 	objCopy; // => [{ "a": { "a1": ["a11", "a13"], "a2": 1 }, "b": 2 }, ["c", { "d": 4, "e": 6 }]]
 }
 ```
+
+### js 对顶赋值 concat
+
+```js
+let _userInfo = { name: "测试", age: "10" };
+let userData = { age: "18", sex: "男" };
+const params = {
+	..._userInfo,
+	...userData,
+};
+// {name: "测试", age: "18", sex: "男"}
+
+let obj = {
+	...{ x: 1, y: 2, z: 3 },
+	...{ x: 9 },
+	...[1, 2, 3],
+	...{ x: "xxx" },
+};
+// {0: 1, 1: 2, 2: 3, x: "xxx", y: 2, z: 3}
+```
