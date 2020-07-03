@@ -17,6 +17,9 @@
 // resolved(Fulfilled): 已经完成，表示得到了我们想要的结果，可以继续往下执行
 // rejected: 也表示得到结果，但是由于结果并非我们所愿，因此拒绝执行
 
+## 这一次，彻底弄懂 Promise 原理
+* [这一次，彻底弄懂 Promise 原理](https://zhuanlan.zhihu.com/p/108439249)
+
 ## Promise
 
 ```js
