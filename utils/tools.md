@@ -29,3 +29,7 @@
 
 -   [VSCode - Beautify 插件配置](https://www.jianshu.com/p/29b1096a0df9)
 -   [VSCode 插件之 Beautify](https://blog.csdn.net/zwli96/article/details/86543130)
+
+## 小程序插件 小程序组件
+
+-   [charts 图标](https://gitee.com/uCharts/uCharts)

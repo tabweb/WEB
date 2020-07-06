@@ -1,3 +1,5 @@
+# 完整的 demo
+
 ## demo
 
 -   [逸宸 / 一指香飞 uni-app](https://gitee.com/wokaixin/a_fragrant_fly)
@@ -14,6 +16,16 @@
 ## [uniapp](https://uniapp.dcloud.io/)
 
 -   [通过 vue-cli 命令行](https://uniapp.dcloud.io/quickstart?id=_2-%e9%80%9a%e8%bf%87vue-cli%e5%91%bd%e4%bb%a4%e8%a1%8c)
+
+## xxx
+
+-   [淘宝客 app+小程序+公众号+h5+pc uniapp 多端项目 java 后台](https://gitee.com/maxiaodong1996/taobaoke)
+-   [省钱兄（APP+H5+公众号）淘宝客源码商城源码前端](https://ext.dcloud.net.cn/plugin?id=1229)
+-   [5 年 web 前端的 uni-app 快速开发项目架构-下载看文档 ](https://github.com/zhouwei1994/uni-app-demo)
+    -   [uni-app 商城](https://ext.dcloud.net.cn/plugin?id=2009)
+-   [graceUI 外包完成项目](https://gitee.com/deng_xuelian/toguanka.git)
+
+# 插件
 
 ## upload img 上传图片
 
