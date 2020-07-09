@@ -101,3 +101,29 @@ uni.getSystemInfo({
 	},
 });
 ```
+
+### sitemap 配置
+
+-   [sitemap 配置](https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html)
+-   [运行 uni-app 报错：sitemap.json Error: 未找到入口 sitemap.json 文件](https://segmentfault.com/a/1190000022348225?utm_source=tag-newest)
+
+pages.json
+
+```json
+{
+	"sitemapLocation": "sitemap.json"
+}
+```
+
+sitemap.json
+
+```json
+{
+	"rules": [
+		{
+			"action": "allow",
+			"page": "*"
+		}
+	]
+}
+```
