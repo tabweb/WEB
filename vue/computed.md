@@ -39,3 +39,35 @@ methods: {
 }
 // 如果不调用的情况下，逻辑都写到get里面，就可以实时更新了。
 ```
+
+### v-model
+
+```html
+<!-- tab组件: <me-tabs v-model="tabIndex"></me-tabs> -->
+<template>
+	<div>{{tabIndex}}</div>
+</template>
+
+<script>
+	export default {
+		props: {
+			value: {
+				// 当前显示的下标 (使用v-model语法糖: 1.props需为value; 2.需回调input事件)
+				type: [String, Number],
+				default: 0,
+			},
+		},
+		data() {
+			return {};
+		},
+		computed: {},
+		watch: {
+			value(n) {
+				console.log(n);
+			},
+		},
+		methods: {},
+		mounted() {},
+	};
+</script>
+```
