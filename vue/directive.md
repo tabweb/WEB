@@ -1,6 +1,7 @@
 ### directive
 
 -   [Vue.directive()的用法和实例](https://blog.csdn.net/qq_36242361/article/details/74641403)
+-   [vue 中 directives 的用法](https://blog.csdn.net/qq_31837621/article/details/80819126)
 -   [Vue.directive( id, [definition] ) 注册或获取全局指令。](https://cn.vuejs.org/v2/api/#Vue-directive)
 
 指令定义函数提供了几个钩子函数（可选）：
