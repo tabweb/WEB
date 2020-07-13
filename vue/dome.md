@@ -5,6 +5,11 @@
 -   [聊天室](https://gitter.im/vue-element-admin/discuss)
 -   [论坛](https://forum.vuejs.org/t/dispatch-in-vue-config-errorhandler-has-some-problem/23500)
 
+## vue-admin-beautiful 通用型集成框架 中后台前端框架
+
+-   [vue-admin-beautiful](https://github.com/chuzhixin/vue-admin-beautiful)
+    -   [vue-admin-beautiful gitee](https://gitee.com/chu1204505056/vue-admin-beautiful)
+
 ## vue-admin
 
 -   [vue-admin](https://github.com/lentoo/vue-admin.git)
