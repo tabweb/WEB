@@ -39,8 +39,8 @@ https://www.jianshu.com/p/b481b6c23cdd
 		computed: {
 			halfWidth() {
 				return uni.upx2px(750 / 2) + "px";
-			}
-		}
+			},
+		},
 	};
 </script>
 <style>
@@ -84,7 +84,7 @@ var prevPage = pages[pages.length - 2]; //上一个页面
 prevPage.onLoad();
 //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
 prevPage.setData({
-	mydata: { a: 1, b: 2 }
+	mydata: { a: 1, b: 2 },
 });
 ```
 
@@ -101,4 +101,19 @@ prevPage.setData({
 Android
 小程序 input 只要 focus 字就会往上跳
 官方demo没解决
+```
+
+## --status-bar-height
+
+-   [uni-app 提供内置 CSS 变量](https://uniapp.dcloud.io/frame?id=css%e5%8f%98%e9%87%8f)
+
+--status-bar-height 系统状态栏高度 系统状态栏高度、nvue 注意见下 25px 0
+--window-top 内容区域距离顶部的距离 0 0 NavigationBar 的高度
+--window-bottom 内容区域距离底部的距离 0 0 TabBar 的高度
+
+```css
+.status_bar {
+	height: var(--status-bar-height);
+	width: 100%;
+}
 ```

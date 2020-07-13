@@ -143,3 +143,15 @@ dis-flex-list 做列表
 ```html
 <view></view>
 ```
+
+### position: fixed 或 absolute 设置高度
+
+```scss
+/*固定高度*/
+.mescroll {
+	position: fixed;
+	top: 44px;
+	bottom: 0;
+	height: auto; /*如设置bottom:50px,则需height:auto才能生效*/
+}
+```
