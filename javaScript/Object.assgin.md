@@ -179,3 +179,23 @@ let obj = {
 };
 // {0: 1, 1: 2, 2: 3, x: "xxx", y: 2, z: 3}
 ```
+
+### arr-flatten
+
+-   [arr-flatten](https://www.npmjs.com/package/arr-flatten)
+
+```js
+function flat(arr, res) {
+	var i = 0,
+		cur;
+	var len = arr.length;
+	for (; i < len; i++) {
+		cur = arr[i];
+		Array.isArray(cur) ? flat(cur, res) : res.push(cur);
+	}
+	return res;
+}
+
+flat(["a", ["b", ["c"]], "d", ["e"]], []);
+// ['a', 'b', 'c', 'd', 'e']
+```
