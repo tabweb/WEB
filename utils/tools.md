@@ -21,6 +21,17 @@
 }
 ```
 
+```json
+{
+	"muse-model": "^0.7.5", // 对 vuex 功能的一个增强，简化了状态流程的写法。增加按需引入 model 的控制 // * https://gitee.com/myronliu347/muse-model
+	"ali-oss": "^6.8.0", // ali-oss(对象存储或者云存储)、七牛云存储，又拍云存储 // * https://www.jianshu.com/p/b98274557bce
+	"dayjs": "^1.7.4", // Day.js 是一个轻量的处理时间和日期的
+	"nprogress": "^0.2.0", // Ajax应用程序的小进度条
+  "husky": "^4.2.5", // 如同其他许多的版本控制系统一样，Git 也具有在特定事件发生之前或之后执行特定脚本代码功能 // * https://www.cnblogs.com/jiaoshou/p/12222665.html
+	"x": "1"
+}
+```
+
 ## vue upload-file
 
 -   [vue-ele-upload-file](https://github.com/dream2023/vue-ele-upload-file.git)
