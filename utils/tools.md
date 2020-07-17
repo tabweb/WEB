@@ -17,6 +17,7 @@
 	"vue-i18n": "7.3.2", // vue 翻译模块
 	"pinyin": "2.9.0", // 汉字拼音转换工具。
 	"xlsx": "0.14.1", // 解析器和编写各种电子表格格式
+	"js-cookie": "^2.2.0", // JavaScript Cookie 
 	"x": "1"
 }
 ```
@@ -27,7 +28,7 @@
 	"ali-oss": "^6.8.0", // ali-oss(对象存储或者云存储)、七牛云存储，又拍云存储 // * https://www.jianshu.com/p/b98274557bce
 	"dayjs": "^1.7.4", // Day.js 是一个轻量的处理时间和日期的
 	"nprogress": "^0.2.0", // Ajax应用程序的小进度条
-  "husky": "^4.2.5", // 如同其他许多的版本控制系统一样，Git 也具有在特定事件发生之前或之后执行特定脚本代码功能 // * https://www.cnblogs.com/jiaoshou/p/12222665.html
+	"husky": "^4.2.5", // 如同其他许多的版本控制系统一样，Git 也具有在特定事件发生之前或之后执行特定脚本代码功能 // * https://www.cnblogs.com/jiaoshou/p/12222665.html
 	"x": "1"
 }
 ```
