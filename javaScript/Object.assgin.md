@@ -2,6 +2,16 @@
 
 -   [js 将多个对象合并成一个对象 assign 方法。ES6 新特性有哪些](https://blog.csdn.net/qq_41387882/article/details/82468384)
 
+### 展开运算符 和 object.assign()的区别
+
+Object.assign ...{}
+
+```
+Object.assign({},{x:1})
+
+{...{x:1}}
+```
+
 ```js
 // 1.接下来介绍一下ES6在Object新加的方法  assign()
 // 1.作用：将多个对象{}  合并成一个独立对象。
