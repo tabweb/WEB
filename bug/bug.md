@@ -156,4 +156,10 @@ dis-flex-list 做列表
 }
 ```
 
-### uni-app
+### 小程序 插屏广告 bug qq.createInterstitialAd
+
+启动小程序(即第一次需要)半分钟才可以显示插屏,两次插屏时间必须有 1 分钟
+
+```js
+let time = state[types.showNum] == 0 ? 30000 : 60000;
+```

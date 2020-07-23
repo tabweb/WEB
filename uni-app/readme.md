@@ -12,3 +12,5 @@
 ## qq 小程序
 
 -   [激励视频广告](https://cdofs.oppomobile.com/cdo-activity/static/201810/26/quickgame/documentation/ad/video-ad.html)
+-   [小程序插屏广告使用](https://www.jianshu.com/p/cfa84296346c)
+
