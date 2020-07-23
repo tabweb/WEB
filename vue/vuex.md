@@ -33,14 +33,14 @@ Vue.use(Vuex);
 
 // 定义属性（数据）
 var state = {
-	count: 6
+	count: 6,
 };
 
 // 定义 getters
 var getters = {
 	count(state) {
 		return state.count;
-	}
+	},
 };
 
 // 定义 actions ，要执行的动作，如流程的判断、异步请求
@@ -50,7 +50,7 @@ const actions = {
 		//提交一个名为 increment 的变化，名字可自定义，可以认为是类型名，与下方 mutations 中的 increment 对应
 		//commit 提交变化，修改数据的唯一方式就是显式的提交 mutations
 		commit("increment");
-	}
+	},
 };
 
 // 定义 mutations ，处理状态（数据） 的改变
@@ -58,14 +58,14 @@ const mutations = {
 	//与上方 commit 中的 ‘increment’ 相对应
 	increment(state) {
 		state.count++;
-	}
+	},
 };
 // 创建 store 对象
 const store = new Vuex.Store({
 	state,
 	getters,
 	actions,
-	mutations
+	mutations,
 });
 
 // 导出 store 对象
@@ -124,4 +124,33 @@ vuex createNamespacedHelpers
 
 ## Vuex mapGetters,mapActions
 
-https://www.cnblogs.com/yaowen/p/8927343.html
+-   [Vuex mapGetters,mapActions](https://www.cnblogs.com/yaowen/p/8927343.html)
+
+## vuex 相关(actions 和 mutation 的异曲同工）
+
+-   [vuex 相关(actions 和 mutation 的异曲同工）](https://www.jianshu.com/p/33e5fb3f3a86)
+
+```js
+ mutations: {
+    addNum(state,amount) {
+      state.num +=amount
+    },
+    someMutation(state) {
+      setTimeout(()=>{
+          state.count--
+      },1000)
+    }
+  },
+  actions: {
+    increment (context,args) {
+           context.commit('addNum',args)
+    }
+  },
+//另一种写法
+  actions: {
+    increment ({commit},args) {
+            commit('addNum',args)
+    }
+  }
+
+```
