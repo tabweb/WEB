@@ -26,6 +26,44 @@ rejected: 也表示得到结果，但是由于结果并非我们所愿，因此�
     https://www.jianshu.com/p/6337bc7f24a5
     https://www.jianshu.com/p/1b63a13c2701
 
+### Promise.try
+
+-   [Promise.try](https://www.jianshu.com/p/0669749eff8f)
+    [JavaScript(ES6) - Promise 对象](https://www.jianshu.com/p/40fcedf84405)
+
+Promise.try
+
+```js
+// 鉴于这是一个很常见的需求，所以现在有一个提案，提供Promise.try方法替代上面的写法。
+
+function getUsername(userId) {
+  return database.users.get({id: userId})
+  .then(function(user) {
+    return user.name;
+  });
+}
+// 上面代码中，database.users.get()返回一个 Promise 对象，如果抛出异步错误，可以用catch方法捕获，就像下面这样写。
+
+database.users.get({id: userId})
+.then(...)
+.catch(...)
+// 但是database.users.get()可能还会抛出同步错误（比如数据库连接错误，具体要看实现方法），这时你就不得不用try...catch去捕获。
+
+try {
+  database.users.get({id: userId})
+  .then(...)
+  .catch(...)
+} catch (e) {
+  // ...
+}
+// 上面这样的写法就很笨拙了，这时就可以统一用promise.catch()捕获所有同步和异步的错误。
+
+Promise.try(database.users.get({id: userId}))
+  .then(...)
+  .catch(...)
+// 事实上，Promise.try就是模拟try代码块，就像promise.catch模拟的是catch代码块。
+```
+
 ## Promise eg
 
 ```js
