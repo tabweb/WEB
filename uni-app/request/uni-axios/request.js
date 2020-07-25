@@ -184,18 +184,22 @@ service.interceptors.response.use(
     }
     switch (error.statusCode) {
       case 401:
-        uni.reLaunch({
-          url: AUTHORIZE_URL
-        });
+        tip('未授权，请登录')
         break
       case 403:
-        showToast('登录信息过期')
+        tip('拒绝访问')
         break
       case 404:
-        showToast('网络请求不存在')
+        tip('请求地址错误')
+        break
+      case 500:
+        tip('服务器内部错误')
+        break
+      case 503:
+        tip('服务不可用')
         break
       default:
-        showToast('请检查网络是否已连接')
+        tip('其他未知错误')
     }
     return
   });
@@ -205,7 +209,7 @@ export const request = ({
   url = '',
   data = {},
   isLoad = true, // loading model
-  showErr = 0, // 0无 1showToast 2tip
+  showErr = 1, // 0无 1showToast 2tip
 }) => {
   if (isLoad) { loading() }
   return new Promise((resolve, reject) => {
@@ -216,9 +220,12 @@ export const request = ({
       header: headers({ method, url, data })
     }).then(res => {
       if (isLoad) { hide() }
-      // 响应拦截器 return 空 调走
+      // 响应拦截器 return 空 调走  兼容res undefined
       if (!res) { return }
       console.log('连接正确', res)
+      if (res.data.status == 1000) {
+        return resolve(res.data)
+      }
       switch (showErr) {
         case 1:
           showToast('showToast' + res.data.message)
@@ -227,11 +234,7 @@ export const request = ({
           tip(res.data.message)
           break;
       }
-      if (res.data.status == 1000) {
-        return resolve(res.data)
-      } else {
-        reject(res.data)
-      }
+      reject(res.data)
     }).catch(err => {
       console.log('上面方法错误执行 错误', err)
       if (isLoad) { hide() }
@@ -239,3 +242,6 @@ export const request = ({
     })
   })
 }
+
+
+// 待定 Promise.try 优化
