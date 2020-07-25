@@ -60,3 +60,9 @@
 
 -   [ dragUI 基于 uni 的可拖拽可视化编程 web 模板 ](https://ext.dcloud.net.cn/plugin?id=1035#%E5%9C%A8%E7%BA%BF%E6%BC%94%E7%A4%BA)
 -   [ dragUI ](https://github.com/wozhishilaonanhai/dragUI)
+
+## uni-ajax uni-axios
+
+-   [uAjax request 请求 ](https://ext.dcloud.net.cn/plugin?id=2351)
+-   [uni-ajax](https://www.npmjs.com/package/uni-ajax)
+-   [uni-ajax](https://github.com/ponjs/uni-ajax)

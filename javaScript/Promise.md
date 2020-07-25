@@ -28,6 +28,7 @@ rejected: 也表示得到结果，但是由于结果并非我们所愿，因此�
 
 ### Promise.try
 
+-   [什么是 Promise.try，为什么它这么重要？](https://segmentfault.com/a/1190000018586947)
 -   [Promise.try](https://www.jianshu.com/p/0669749eff8f)
     [JavaScript(ES6) - Promise 对象](https://www.jianshu.com/p/40fcedf84405)
 
@@ -90,7 +91,7 @@ Promise.try(database.users.get({id: userId}))
 }
 ```
 
-## 模拟 ajax promist
+## 模拟 ajax promise
 
 ```js
 {
@@ -225,4 +226,37 @@ Promise {[[PromiseStatus]]: "resolved",
 var a = Promise.resolve('xx')
 // Promise {[[PromiseStatus]]: "resolved", [[PromiseValue]]: "xx"}
 a.then(function (result) { console.log(result) })
+```
+
+## promise axios
+
+-   [vue+axios+promise 实际开发用法](https://segmentfault.com/a/1190000016680014)
+    https://www.cnblogs.com/lalalagq/p/9901185.html
+-   [Promise 配合 axios 使用](https://www.cnblogs.com/ralapgao/p/10069677.html)
+-   [ES6 Promise 用法讲解](https://www.cnblogs.com/whybxy/p/7645578.html)
+-   [Vue- 应用 Promise 的 axios 请求封装](https://www.jianshu.com/p/8e0967785c3b?utm_source=oschina-app)
+    https://www.jianshu.com/p/c40b34a74094
+    https://www.jianshu.com/p/d51a161958e5
+    https://segmentfault.com/a/1190000018586947
+    https://www.jianshu.com/p/6f74c4da88e9
+
+```es6
+export default {
+	fetchData(url, methods, datas) {
+		return new Promise((resolve, reject) => {
+			axios({
+				url: url,
+				method: methods,
+				data: datas,
+			})
+				.then((res) => {
+					resolve(res);
+				})
+				.catch(function (error) {
+					reject(error);
+					// console.log(error);
+				});
+		});
+	},
+};
 ```
