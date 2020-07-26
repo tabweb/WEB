@@ -80,7 +80,7 @@ class UniAjax {
     } else {
       return new Promise(async (resolve, reject) => {
         const [err, res] = await uni.request(request);
-        const result = await handleResponse.call(this, { response, ...(res || err) });
+        const result = await handleResponse.call(this, { response, ...(res || err) }, params);
         if (res) resolve(result);
         else reject(result);
       });

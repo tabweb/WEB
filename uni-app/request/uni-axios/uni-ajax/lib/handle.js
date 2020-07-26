@@ -34,6 +34,9 @@ async function handleRequest(request = {}) {
   // 拼接 url
   _params.url = requestUrl(this.config.baseUrl, request.url);
 
+  // 子域名 subUrl
+  _params.subUrl = request.url;
+
   if (!_params.url) {
     await this.interceptors.request.rejected({
       errMsg: 'request:fail Missing required parameter `url`'
@@ -59,9 +62,9 @@ async function handleRequest(request = {}) {
  * 对响应拦截再次处理
  * @param {object} response
  */
-async function handleResponse(response = {}) {
+async function handleResponse(response = {}, request = {}) {
   const interceptor = response.statusCode >= 200 && response.statusCode < 300 ? 'fulfilled' : 'rejected';
-  const result = await this.interceptors.response[interceptor](response);
+  const result = await this.interceptors.response[interceptor](response, request);
   return result;
 }
 

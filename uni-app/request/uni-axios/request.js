@@ -145,8 +145,8 @@ service.interceptors.request.use(
 
 // 响应拦截器
 service.interceptors.response.use(
-  response => {
-    console.log('响应拦截器', response)
+  (response, request) => {
+    console.log('响应拦截器', response, request)
     switch (response.data.status) {
       case 1000:
         // return response || Promise.resolve(response);  都执行  service.request().then(res=>{ xxx })
