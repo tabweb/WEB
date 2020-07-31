@@ -66,3 +66,7 @@
 -   [uAjax request 请求 ](https://ext.dcloud.net.cn/plugin?id=2351)
 -   [uni-ajax](https://www.npmjs.com/package/uni-ajax)
 -   [uni-ajax](https://github.com/ponjs/uni-ajax)
+
+## uni-app 小程序 App权限判断和提示
+
+-   [App权限判断和提示](https://ext.dcloud.net.cn/plugin?id=594)
