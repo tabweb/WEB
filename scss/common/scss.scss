@@ -1,0 +1,227 @@
+// font-size8 font-size10 font-size12 ... font-size50  ----
+$font-size: 1 !default;
+$font-size-num: 50;
+
+@for $i from 0 through $font-size-num {
+  @if (($i > 7) and ($i <=$font-size-num) and ($i % 2==0)) {
+    .font-size#{$font-size * $i} {
+      font-size: #{$font-size * $i}rpx;
+    }
+  }
+}
+
+.font-size0 {
+  font-size: 0
+}
+
+// eg top2 * width2 * height2 * margin-top2 * padding-top2
+$top: 1 !default;
+$top-num: 50; //
+$positive-list: (top: 'top',
+  bottom: 'bottom',
+  left: 'left',
+  right: 'right',
+  width: 'width',
+  height: 'height',
+  min-width: 'min-width',
+  min-height: 'min-height',
+  margin:'margin',
+  margin-top:'margin-top',
+  margin-bottom:'margin-bottom',
+  margin-left:'margin-left',
+  margin-right:'margin-right',
+  padding:'padding',
+  padding-top:'padding-top',
+  padding-bottom:'padding-bottom',
+  padding-left:'padding-left',
+  padding-right:'padding-right',
+
+);
+
+@for $i from 1 through $top-num {
+
+  @each $index,
+  $value in $positive-list {
+    @if ($i % 2==0) {
+      .#{$value}#{$top * $i} {
+        #{$value}: #{$top * $i}rpx !important;
+      }
+    }
+  }
+}
+
+// eg top-2 top-4 top-6 ... top-50
+$position-list: (top: 'top',
+  bottom: 'bottom',
+  left: 'left',
+  right: 'right',
+);
+
+@for $i from 1 through $top-num {
+
+  @each $index,
+  $value in $position-list {
+    @if ($i % 2==0) {
+      .#{$value}#{-$top * $i} {
+        #{$value}: #{-$top * $i}rpx !important;
+      }
+    }
+  }
+}
+
+// padding0 padding-top0 -- 增加权重
+@each $index,
+$value in $positive-list {
+  .#{$value}0 {
+    #{$value}: 0;
+  }
+}
+
+// border-radius2 border-radius4 ****************************
+$border-radius-num:50;
+$border-radius-list: (border-radius: 'border-radius',
+  border-top-left-radius:'border-top-left-radius',
+  border-top-right-radius:'border-top-right-radius',
+  border-bottom-left-radius:'border-bottom-left-radius',
+  border-bottom-right-radius:'border-bottom-right-radius',
+);
+
+@for $i from 0 through $border-radius-num {
+
+  @each $index,
+  $value in $border-radius-list {
+    @if ($i % 2==0) {
+      .#{$value}#{$i} {
+        #{$value}: #{$i}rpx !important;
+      }
+    }
+  }
+}
+
+// border-radius
+@each $index,
+$value in $border-radius-list {
+  .#{$value} {
+    #{$value}: 1000rpx !important;
+  }
+}
+
+// gradients ****************
+$gradients-list:(yellow: (#fef643, #fee047), // 渐变色
+  orange: (#ffc199, #ff9a6a), // 渐变色
+  black: (transparent, rgba(0, 0, 0, .6)), // 渐变色
+  red: (#FE6DA6, #FF8D6E), // 渐变色
+  purple: (#FEE7DC, #E3D7FF),
+);
+
+@mixin gradients-bgcolor {
+
+  @each $index,
+  $value in $gradients-list {
+    .bg-grad-#{$index} {
+      background-image: linear-gradient(to right, #{$value}) !important;
+    }
+
+    .bg-grad-bottom-#{$index} {
+      background-image: linear-gradient(#{$value}) !important;
+    }
+  }
+}
+
+@include gradients-bgcolor;
+
+// btn-color-yellow *************
+.btn-color-yellow {
+  // 黄色按钮 主色系
+  color: rgba(255, 255, 255, 1) !important;
+  background-image: linear-gradient(to right, #ffc199, #ff9a6a) !important;
+  box-shadow: 0px 5px 9px 0px rgba(255, 160, 113, 0.25);
+}
+
+.btn-color-blue {
+  // 蓝色按钮 主色系
+  color: rgba(255, 255, 255, 1) !important;
+  background-image: linear-gradient(to right, rgba(98, 183, 254, 1), rgba(86, 156, 253, 1)) !important;
+  box-shadow: 0px 5px 9px 0px rgba(87, 159, 253, 0.25);
+}
+
+.btn-color-gray {
+  // 灰色按钮 主色系
+  color: rgba(153, 153, 153, 1) !important;
+  background-image: linear-gradient(to right, rgba(233, 233, 233, 1), rgba(217, 217, 217, 1)) !important;
+  box-shadow: 0px 5px 9px 0px rgba(241, 230, 215, 0.25);
+}
+
+.btn-color-red {
+  // 红色按钮 主色系
+  color: rgba(255, 255, 255, 1) !important;
+  background-image: linear-gradient(to right, #FE6DA6, #FF8D6E) !important;
+  box-shadow: 0px 3px 8px 0px rgba(255, 104, 162, 0.25);
+}
+
+.btn-color-white {
+  // 白色按钮 主色系
+  color: #414141;
+  background: #FFFFFF !important;
+  border: 1px solid #BFBFBF;
+}
+
+// color ****************************
+$color-list: (black: rgba(0, 0, 0, 1),
+  pop:rgba(0, 0, 0, .53),
+  white: rgba(255, 255, 255, 1),
+  blue:rgba(99, 179, 240, 1),
+  red: rgba(255, 0, 0, 1),
+  green: rgba(0, 255, 0, 1),
+  gray: rgba(187, 189, 187, 1),
+  pink: rgba(255, 100, 119, 1),
+  orange:rgba(255, 162, 52, 1),
+  yellow:rgba(216, 216, 17, 1),
+  text:#414141, // 标题文字
+  text1:#818181, // 次级文字
+  text2:#ababab, // 辅助文字
+  red1:#ff9d69, // 标红文字
+  red2:#F66B72, // 标红文字
+  yellow1:#ffb901, // 标黄文字
+  bg:#fef4eb, // 辅助背景
+  bg-gray:#f8f8f8, // 辅助背景灰
+  line:#f2f2f2, // 分割线
+  btnline:#bfbfbf, // 分割线
+  btn:#26a6ff, // 按钮颜色
+);
+
+@mixin color-bgcolor {
+
+  @each $index,
+  $value in $color-list {
+    :root {
+      --color-#{$index}: #{$value};
+    }
+
+    .color-#{$index} {
+      color: #{$value} !important;
+    }
+
+    .bg-color-#{$index} {
+      background-color: #{$value} !important;
+    }
+
+    .border-color-#{$index} {
+      border: 1rpx solid #{$value} !important;
+    }
+
+    .border-top-color-#{$index} {
+      border-top: 1rpx solid #{$value} !important;
+    }
+
+    .border-bottom-color-#{$index} {
+      border-bottom: 1rpx solid #{$value} !important;
+    }
+
+    .border-left-color-#{$index} {
+      border-left: 1rpx solid #{$value} !important;
+    }
+  }
+}
+
+@include color-bgcolor;

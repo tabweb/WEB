@@ -1,0 +1,61 @@
+$hd: 2rpx; // 基本单位
+
+// 主色调
+$primary:#FF9D69;
+// 主色调点击
+$primary-tap: #ffa071;
+// 重要
+$important: #f66b72;
+// 选中，聊天背景
+$wait: #42a5ff;
+
+// 基本
+$color-text-base: #414141;
+// 辅助描述       
+$color-text-caption: #818181;
+// 失效     
+$color-text-disabled: #ababab;
+
+// 字体尺寸
+// 通用尺寸
+$font-size-base: 14 * $hd;
+// 一级标题
+$font-size-heading: 18 * $hd;
+// 二级标题
+$font-size-subhead: 15 * $hd;
+// 辅助说明
+$font-size-caption: 12 * $hd;
+// 段落内容
+$font-size-icontext: 10 * $hd;
+
+ 
+// 边框色
+$border-color-base: #ececec;
+
+// 水平间距
+$h-spacing-sm: 5 * 2 * $hd;
+$h-spacing-md: 15 * $hd;
+$h-spacing-lg: 15 * 2 * $hd;
+
+// 垂直间距
+$v-spacing-sm: 6 * $hd;
+$v-spacing-md: 9 * $hd;
+$v-spacing-lg: 15 * $hd;
+
+// init
+// 页面背景色
+$split-line-color:#f2f2f2;
+$page-background-color:#F8F8F8;
+$im-send-height:60rpx;
+$safe-bottom:0rpx;
+$safe-bottom-iphonex:30rpx;
+
+.cs-hide {
+    display: none;
+}
+
+@mixin singleEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

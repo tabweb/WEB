@@ -1,0 +1,127 @@
+// eg 百分比 width1-2
+$width-percent-list: (pct2: 2,
+  pct3: 3,
+  pct4: 4,
+  pct5: 5,
+  pct6: 6,
+);
+
+@mixin width-pct {
+
+  @each $index,
+  $value in $width-percent-list {
+    .width1-#{$value} {
+      width: (100%/$value);
+    }
+  }
+}
+
+@include width-pct;
+
+// animation-delay ----
+$gridColumns: 20 !default;
+$animation-delay: .2s !default;
+
+@for $i from 1 through $gridColumns {
+  .animation-delay#{$i} {
+    animation-delay: $animation-delay * $i !important;
+  }
+}
+
+// animation common -----------
+.animation-linear {
+  animation-timing-function: linear !important;
+}
+
+.animation-infinite {
+  animation-iteration-count: infinite !important;
+}
+
+.scale-center {
+  animation: scale-center .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-center {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// 上下
+.arrow-y {
+  animation: arrow-y 2s infinite;
+}
+
+@keyframes arrow-y {
+  50% {
+    transform: translateY(10rpx);
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale-out-center {
+  animation: scale-out-center .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.share,
+.pulsate-fwd {
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+}
+
+@keyframes pulsate-fwd {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.swing {
+  animation: swing 2s linear infinite both;
+}
+
+@keyframes swing {
+
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg)
+  }
+
+  25% {
+    transform: rotate(15deg)
+  }
+
+  75% {
+    transform: rotate(-15deg)
+  }
+}

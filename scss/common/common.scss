@@ -1,0 +1,524 @@
+page,
+view,
+scroll-view,
+swiper,
+movable-view,
+cover-view,
+icon,
+text,
+rich-text,
+progress,
+button,
+checkbox,
+form,
+input,
+label,
+picker,
+picker-view,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+functional-page-navigator,
+audio,
+image,
+video,
+camera,
+live-player,
+live-pusher,
+map,
+canvas,
+open-data,
+web-view,
+ad,
+official-account,
+swiper-item,
+cover-image {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+canvas {
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+// 行内块元素
+.inline {
+  display: inline-block;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
+}
+
+.event-auto {
+  pointer-events: auto;
+}
+
+.event-none {
+  pointer-events: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.cf:after,
+.cf:before {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+.scroll-y {
+  overflow-y: auto;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-block {
+  display: block;
+}
+
+.dis-flex-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dis-flex-c {
+  display: flex;
+  justify-content: center;
+}
+
+// 底部对齐
+.dis-flex-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+// flex 正常demo流
+.dis-flex-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+// 横向逆向demo流
+.dis-flex-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-bottom {
+  align-items: flex-end;
+}
+
+// 左垂直居中对齐
+.dis-flex-left {
+  display: flex !important;
+  align-items: center;
+}
+
+.dis-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dis-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+// flex 自动换行
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-center {
+  width: 47%;
+  margin: 1.5%;
+}
+
+.flex-left {
+  flex-direction: row;
+}
+
+.justify-space {
+  justify-content: space-around;
+}
+
+.justify {
+  text-align: justify;
+  justify-content: space-between;
+}
+
+// 文本不换行
+.white-nowrap {
+  white-space: nowrap;
+}
+
+// 允许长单词换行到下一行
+.break-word {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.line-clamp2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.ellipsis-white {
+  position: relative;
+  height: 3.6em;
+
+  &:after {
+    content: '';
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1) 50%);
+  }
+}
+
+.pos-f {
+  position: fixed;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+.pa {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pa-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pa-b {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pa-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pos-r {
+  position: relative;
+}
+
+.pr {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.tce {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.mCe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vCe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.btn {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.line-height {
+  line-height: 1;
+}
+
+.min-height {
+  min-height: 100%;
+}
+
+.margin-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.v-align-middle {
+  white-space: nowrap;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.border-50 {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.bg-back {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.bg-back-w {
+  width: 100% !important;
+}
+
+.bg-back-h {
+  height: 100% !important;
+}
+
+.bg {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+.bg-w {
+  width: 100vw !important;
+}
+
+.bg-h {
+  height: 100vh !important;
+}
+
+.bg2 {
+  height: 200vh !important;
+  width: 200vw !important;
+}
+
+.bg3 {
+  height: 300vh !important;
+  width: 300vw !important;
+}
+
+.transformZ {
+  transform: translateZ(1px);
+}
+
+.backface-visibility {
+  backface-visibility: hidden;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.z-index-top {
+  z-index: 9999;
+}
+
+.z-index99 {
+  z-index: 99;
+}
+
+.z-index100 {
+  z-index: 100;
+}
+
+.z-index200 {
+  z-index: 200;
+}
+
+.z-index-10 {
+  z-index: -10;
+}
+
+.v-align-tb {
+  vertical-align: text-bottom;
+}
+
+.over-scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-line {
+  text-decoration: line-through;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.border-none {
+  border: none !important;
+}
+
+// flexflex
+.flex {
+  display: flex;
+
+  >.left,
+  >.right {
+    flex: none;
+  }
+
+  >.content {
+    flex: auto;
+  }
+}
+
+
+
+.box-shadow {
+  box-shadow: 0px 5px 9px rgba(0, 21, 41, 0.08);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// uni-app vue ***************
+view[hidden] {
+  display: none !important;
+}
+
+// bug
+.ios-min-height {
+  min-height: 101vh;
+  overflow-y: scroll;
+}
