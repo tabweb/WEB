@@ -73,3 +73,11 @@ wx.getSetting
 uni.authorize
 
 > 提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。如果用户之前拒绝了授权，此接口会直接进入失败回调，一般搭配 uni.getSetting 和 uni.openSetting 使用。
+
+## qq 单独授权
+
+### qq 授权添加好友
+
+-   [QQ 小程序加 QQ 群和加好友](https://blog.csdn.net/weixin_45514169/article/details/107397007)
+-   [授权添加好友 setting.addFriend](https://q.qq.com/wiki/develop/game/frame/open-ability/authorize.html)
+-   [addFriend](https://q.qq.com/wiki/develop/miniprogram/component/form/button.html)
