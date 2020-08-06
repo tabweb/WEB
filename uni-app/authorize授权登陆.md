@@ -76,8 +76,49 @@ uni.authorize
 
 ## qq 单独授权
 
-### qq 授权添加好友
+### qq 授权添加好友 （授权别人可以添加我为好友）
 
 -   [QQ 小程序加 QQ 群和加好友](https://blog.csdn.net/weixin_45514169/article/details/107397007)
 -   [授权添加好友 setting.addFriend](https://q.qq.com/wiki/develop/game/frame/open-ability/authorize.html)
 -   [addFriend](https://q.qq.com/wiki/develop/miniprogram/component/form/button.html)
+
+```vue
+<template>
+	<view class="bg-back">
+		<button open-type="addFriend" :open-id="openId" @addfriend="addfriend">
+			<text>点我加好友</text>
+		</button>
+	</view>
+</template>
+<script>
+import { authAddFriend } from "@/utils/authorize";
+export default {
+	props: {
+		openId: {
+			type: String,
+			default: "",
+		},
+	},
+	components: {},
+	data() {
+		return {};
+	},
+	watch: {},
+	computed: {},
+	methods: {
+		addfriend(e) {
+			if (e.detail.errMsg != "addFriend:ok") {
+				this.$tip.showToast("对方未授权添加好友权限");
+				return;
+			}
+			authAddFriend().catch((err) => {
+				this.$tip.showToast("qq授权错误");
+			});
+		},
+	},
+	created() {},
+	mounted() {},
+};
+</script>
+<style lang="scss" scoped></style>
+```
