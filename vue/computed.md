@@ -42,6 +42,8 @@ methods: {
 
 ### v-model
 
+v-model components value
+
 ```html
 <!-- tab组件: <me-tabs v-model="tabIndex"></me-tabs> -->
 <template>
@@ -50,6 +52,8 @@ methods: {
 
 <script>
 	export default {
+		mixins: [],
+		components: {},
 		props: {
 			value: {
 				// 当前显示的下标 (使用v-model语法糖: 1.props需为value; 2.需回调input事件)
