@@ -55,3 +55,51 @@
 </script>
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
 ```
+
+### v-for :key bug
+
+v-for 动态添加数据，:key 不是唯一 id，媒体资源 不更新(为了性能优化,不更新媒体资源)
+
+```vue
+<template>
+	<div v-for="(value, index) in arr" :key="value.id">
+		<image :src="value.img" />
+	</div>
+</template>
+
+<script>
+export default {
+	mixins: [],
+	components: {},
+	props: {
+		value: {
+			type: [String, Number],
+			default: 0,
+		},
+	},
+	data() {
+		return {
+			arr: [
+				{
+					id: 1,
+					img: "https://img.xjh.me/desktop/img/61507525_p0.jpg",
+				},
+				{
+					id: 2,
+					img:
+						"https://img.xjh.me/desktop/img/63957933_p0_master1200.jpg",
+				},
+			],
+		};
+	},
+	computed: {},
+	watch: {
+		value(n) {
+			console.log(n);
+		},
+	},
+	methods: {},
+	mounted() {},
+};
+</script>
+```
