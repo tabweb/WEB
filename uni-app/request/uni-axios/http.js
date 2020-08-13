@@ -256,7 +256,10 @@ export const request = ({
       url: url,
       data: utils.clearAll(data),
     }).then(res => {
-      if (isLoad) { setTimeout(() => { hide() }, 300) }
+      if (isLoad) {
+        // 兼容loading 快速闪现
+        setTimeout(() => { hide() }, 300)
+      }
       // 兼容res undefined
       if (!res) { return }
       if (res.data.status == 1000) {
