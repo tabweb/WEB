@@ -5,7 +5,7 @@ import { baseUrl } from '@/config'
 import createAxios from "./uni-axios"
 import { qqRefresh, silentLogin } from '@/utils/authorize'
 
-const VERSION_CODE = '116'
+const VERSION_CODE = '200'
 const APP_TYPE_QQ = 'applet-qq'
 const AUTHORIZE_URL = '/pages/tabBar/loading/index'
 
@@ -149,36 +149,66 @@ service.interceptors.response.use(
     switch (response.data.status) {
       case 1000:
         return Promise.resolve(response);
-      case 218: // 无效操作
+      case 101: // 服务器内部错误
         tip(response.data.message)
-        if (isGoSexOption()) {
-          uni.reLaunch({
-            url: '/pages/tabBar/sexOption/index',
-          })
-          return
-        }
-        await silentLogin({ method, url, data })
+        console.error(response.data.message, request.url, request.data, '/n', response.data)
+        return;
+      case 204: // 数据错误
+        tip(response.data.message)
         return
-      case 219: // 登陆失效
-        tip(response.data.message)
+      case 213: // 用户信息不能为空
         if (isGoSexOption()) {
           uni.reLaunch({
             url: '/pages/tabBar/sexOption/index',
           })
           return
         }
+        try {
+          let res = await silentLogin({ method, url, data })
+          return Promise.resolve({ data: { data: res, status: 1000 }, statusCode: 200 });
+        } catch (error) {
+          return;
+        }
+      case 218: // 无效操作
+        if (isGoSexOption()) {
+          uni.reLaunch({
+            url: '/pages/tabBar/sexOption/index',
+          })
+          return
+        }
+        try {
+          let res = await silentLogin({ method, url, data })
+          return Promise.resolve({ data: { data: res, status: 1000 }, statusCode: 200 });
+        } catch (error) {
+          return;
+        }
+      case 219: // 登陆失效
+        if (isGoSexOption()) {
+          uni.reLaunch({
+            url: '/pages/tabBar/sexOption/index',
+          })
+          return
+        }
+        // 219 清除所有 storage
+        uni.clearStorageSync()
         uni.reLaunch({
           url: AUTHORIZE_URL
         });
         return;
+
       // case 43001: // 登陆失效
       //   tip(response.data.message)
       //   qqRefresh({ method, url, data })
       //   return
+
       case 220: // QQ小程序session失效
-        tip(response.data.message)
-        await qqRefresh({ method, url, data })
-        return;
+        // tip(response.data.message)
+        try {
+          let res = await qqRefresh({ method, url, data })
+          return Promise.resolve({ data: { data: res, status: 1000 }, statusCode: 200 });
+        } catch (error) {
+          return;
+        }
     }
     return Promise.resolve(response)
   },
@@ -217,7 +247,7 @@ export const request = ({
   url = '',
   data = {},
   isLoad = true, // loading model
-  showErr = 1, // 0无 1showToast 2tip
+  showErr = 2, // 0无 1showToast 2tip
 }) => {
   if (isLoad) { loading() }
   return new Promise((resolve, reject) => {
@@ -226,7 +256,7 @@ export const request = ({
       url: url,
       data: utils.clearAll(data),
     }).then(res => {
-      if (isLoad) { hide() }
+      if (isLoad) { setTimeout(() => { hide() }, 300) }
       // 兼容res undefined
       if (!res) { return }
       if (res.data.status == 1000) {
@@ -242,8 +272,8 @@ export const request = ({
       }
       reject(res.data)
     }).catch(res => {
-      if (isLoad) { hide() }
-      console.log('异常', res)
+      if (isLoad) { setTimeout(() => { hide() }, 300) }
+      console.log('异常错误', res)
       return
     })
   })
