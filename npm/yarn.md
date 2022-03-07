@@ -34,3 +34,18 @@ yarn的安装:
 yarn config set registry https://registry.npm.taobao.org -g
 第二步：配置下 node-sass 的二进制包镜像地址
 yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+
+## nrm
+
+-   [npm、yarn、nrm 包管理工具](https://blog.csdn.net/angong8327/article/details/101124052)
+
+```
+安装 nrm：
+npm install -g nrm
+
+列出可用源：
+nrm ls
+
+切换源：
+nrm use taobao
+```
