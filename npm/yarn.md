@@ -29,6 +29,7 @@ yarn的安装:
 ## react yarn 安装 node-sass 过慢或报编译错误
 
 -   [为什么 node-sass 总是安装失败？](https://segmentfault.com/a/1190000020993365?utm_source=tag-newest)
+-   [node-sass@4.14.1的报错的最终解决方案](https://blog.csdn.net/The_more_more/article/details/124506307)
 
 第一步：配置淘宝镜像
 yarn config set registry https://registry.npm.taobao.org -g
