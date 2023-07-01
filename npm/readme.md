@@ -22,7 +22,9 @@
 | npm update --save            | yarn upgrade         |
 
 ## npmmirror 中国镜像站
+
 https://npmmirror.com/
+
 ## npm 和 yarn 淘宝镜像
 
 ```
