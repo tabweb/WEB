@@ -55,14 +55,14 @@ yarn config set registry https://registry.yarnpkg.com
 
 ```
 NPM
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 npm config set disturl https://npm.taobao.org/dist
 npm config set electron_mirror https://npm.taobao.org/mirrors/electron/
 npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
 npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
 
 YARN
-yarn config set registry https://registry.npm.taobao.org -g
+yarn config set registry https://registry.npmmirror.com -g
 yarn config set disturl https://npm.taobao.org/dist -g
 yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g
 yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g

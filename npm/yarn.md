@@ -19,12 +19,17 @@ yarn的安装:
   安装node.js,下载yarn的安装程序:
   提供一个.msi文件，在运行时将引导您在Windows上安装Yarn
   Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可
-  yarn config set registry https://registry.npm.taobao.org -g
+  yarn config set registry https://registry.npmmirror.com -g
   yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
 
 ```
 
 ![yarn](yarn.png)
+
+## 以前的淘宝镜像
+···
+以前的淘宝镜像地址 https://registry.npm.taobao.org
+···
 
 ## react yarn 安装 node-sass 过慢或报编译错误
 
@@ -32,9 +37,9 @@ yarn的安装:
 -   [node-sass@4.14.1的报错的最终解决方案](https://blog.csdn.net/The_more_more/article/details/124506307)
 
 第一步：配置淘宝镜像
-yarn config set registry https://registry.npm.taobao.org -g
+yarn config set registry https://registry.npmmirror.com -g
 第二步：配置下 node-sass 的二进制包镜像地址
-yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+yarn config set sass_binary_site https://registry.npmmirror.com/dist/node-sass -g
 
 ## nrm
 
